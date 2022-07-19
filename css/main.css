@@ -3,13 +3,13 @@
 }
 
 body {
-    margin: 0;
+  margin: 0;
   background-color: #f4f4f4;
   font-family: "Roboto", sans-serif;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 .container {
@@ -26,8 +26,6 @@ img {
 
 .main {
   width: 870px;
-  height: 200px;
-  background-color: aqua;
 }
 
 .sidebar {
@@ -89,11 +87,11 @@ a.card-link:hover {
 }
 
 .card__badge--class {
-    background: #FFCF26;
+  background: #ffcf26;
 }
 
 .card__badge--credit {
-    background: #11BE75;
+  background: #11be75;
 }
 
 .card__content {
@@ -139,4 +137,26 @@ a.card-link:hover {
   font-size: 14px;
   line-height: 1.14;
   color: #777777;
+}
+
+/* Button more */
+.btn-more {
+  width: 100%;
+  height: 80px;
+
+  background: #e5e5e5;
+  border-radius: 4px;
+  border: none;
+
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4290c9;
+}
+
+.btn-more img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
 }
