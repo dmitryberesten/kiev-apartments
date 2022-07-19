@@ -36,7 +36,28 @@ img {
   background-color: rgb(4, 255, 0);
 }
 
+.cards-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards-holder > .card-link {
+  margin-bottom: 30px;
+}
+
 /* Card */
+
+a.card-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+a.card-link:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
 
 .card {
   position: relative;
