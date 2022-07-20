@@ -167,7 +167,8 @@ a.card-link:hover {
 
 /* Sidebar */
 
-.widget {
+.widget + .widget {
+  margin-top: 30px;
 }
 
 .widget__title {
@@ -258,3 +259,58 @@ a.card-link:hover {
   background-color: #e0b000;
 }
 
+/* Radio */
+.radio {
+  display: block;
+  cursor: pointer;
+}
+
+.radio + .radio {
+  margin-top: 15px;
+}
+
+.radio__real {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.radio__real:checked ~ .radio__title {
+    font-weight: 500;
+}
+
+.radio__fake {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+.radio__real:checked + .radio__fake {
+  background-color: #ffe074;
+}
+
+.radio__real:checked + .radio__fake::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: #3C3C3C;
+  transform: translate(-50%, -50%);
+}
+
+
+.radio__title {
+  font-size: 16px;
+  line-height: 1.18;
+  color: #000000;
+}
