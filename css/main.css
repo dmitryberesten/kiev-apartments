@@ -400,3 +400,61 @@ display: none;
   color: #007fda;
   text-decoration: underline;
 }
+
+/* Toggle */
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle__real {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.toggle__fake {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 20px;
+  background: #C4C4C4;
+  border-radius: 10px;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.toggle__fake::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #3C3C3C;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.toggle__real:checked + .toggle__fake {
+  background: #FFE074;
+}
+
+.toggle__real:checked + .toggle__fake::before {
+  left: 19px;
+}
+
+
+
+.toggle__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #000000;
+}
+
+.toggle__real:checked ~ .toggle__title {
+  font-weight: 500;
+}
