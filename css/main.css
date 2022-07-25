@@ -377,7 +377,7 @@ a.card-link:hover {
 /* Hidden elements widget */
 
 .widget__hidden {
-display: none;
+  display: none;
 }
 
 .widget__show-hidden {
@@ -420,7 +420,7 @@ display: none;
   display: inline-block;
   width: 37px;
   height: 20px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   border-radius: 10px;
   vertical-align: bottom;
   margin-right: 10px;
@@ -433,20 +433,18 @@ display: none;
   content: "";
   width: 16px;
   height: 16px;
-  background: #3C3C3C;
+  background: #3c3c3c;
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .toggle__real:checked + .toggle__fake {
-  background: #FFE074;
+  background: #ffe074;
 }
 
 .toggle__real:checked + .toggle__fake::before {
   left: 19px;
 }
-
-
 
 .toggle__title {
   font-weight: 400;
@@ -457,4 +455,50 @@ display: none;
 
 .toggle__real:checked ~ .toggle__title {
   font-weight: 500;
+}
+
+/* Form buttons */
+.form-btn {
+  width: 100%;
+  height: 50px;
+
+  border: 1px solid #d6d6d6;
+
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-family: inherit;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1px;
+  color: #3c3c3c;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.form-btn img {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.form-btn:hover {
+  background-color: #e7e7e7;
+}
+
+.form-btn + .form-btn {
+  margin-top: 10px;
+}
+
+.form-btn--submit {
+  background: #ffcf26;
+  border: none;
+  color: #000;
+}
+
+.form-btn--submit:hover {
+  background: #ffe173;
 }
