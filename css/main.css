@@ -47,6 +47,7 @@ img {
 
 @media (max-width: 829px) {
   .sidebar {
+    /* display: none; */
     margin-left: 0 !important;
     position: fixed;
     top: 0;
@@ -57,7 +58,13 @@ img {
     box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 37%);
     overflow-y: scroll;
     transform: translate(-150%);
+    transition: transform 0.3s ease-in;
   }
+
+  .sidebar--mobile-active {
+    transform: translateX(-0%);
+  }
+
 }
 
 .main + .sidebar {
@@ -541,4 +548,76 @@ a.card-link:hover {
 
 .form-btn--submit:hover {
   background: #ffe173;
+}
+
+/* Button Toggle Sidebar */
+.toggle-sidebar {
+  position: fixed;
+  display: block;
+  /* position: absolute; */
+  right: 15px;
+  top: 35px;
+  width: 45px;
+  height: 45px;
+  /* background-color: rgb(71, 71, 71); */
+  border: none;
+  padding: 0;
+  z-index: 9;
+}
+
+
+.menu-icon-wrapper {
+	/* width: 30px;
+	height: 30px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-icon {
+	position: relative;
+	width: 30px;
+	height: 5px;
+	background-color: black;
+}
+
+.menu-icon::before {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon::after {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	content: '';
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active {
+	background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
