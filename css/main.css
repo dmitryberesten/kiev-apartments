@@ -47,8 +47,21 @@ img {
 
 @media (max-width: 829px) {
   .sidebar {
-    display: none;
+    margin-left: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 37%);
+    overflow-y: scroll;
+    transform: translate(-150%);
   }
+}
+
+.main + .sidebar {
+  margin-left: 30px;
 }
 
 .cards-holder {
@@ -64,9 +77,6 @@ img {
   }
 }
 
-.main + .sidebar {
-  margin-left: 30px;
-}
 
 .cards-holder > .card-link {
   margin-bottom: 30px;
