@@ -13,10 +13,22 @@ img {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding: 60px 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 830px;
+  }
+}
+
+@media (max-width: 829px) {
+  .container {
+    max-width: 600px;
+  }
 }
 
 .row {
@@ -29,13 +41,31 @@ img {
 }
 
 .sidebar {
+  min-width: 200px;
   width: 270px;
+}
+
+@media (max-width: 829px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .cards-holder {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 599px) {
+  .cards-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main + .sidebar {
+  margin-left: 30px;
 }
 
 .cards-holder > .card-link {
