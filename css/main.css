@@ -552,8 +552,9 @@ a.card-link:hover {
 
 /* Button Toggle Sidebar */
 .toggle-sidebar {
+  display: none;
   position: fixed;
-  display: block;
+  z-index: 9;
   /* position: absolute; */
   right: 15px;
   top: 35px;
@@ -562,19 +563,27 @@ a.card-link:hover {
   /* background-color: rgb(71, 71, 71); */
   border: none;
   padding: 0;
-  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 599px) {
+  .toggle-sidebar {
+    display: flex;
+  }
 }
 
 
 .menu-icon-wrapper {
-	/* width: 30px;
-	height: 30px; */
+	width: 30px;
+	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
 	border: none;
 	background-color: transparent;
+  margin-top: 10px;
 }
 
 .menu-icon {
