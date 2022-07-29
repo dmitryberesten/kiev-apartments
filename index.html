@@ -271,16 +271,16 @@
                         <!-- Location -->
                         <div class="location">
                             <div class="location__row">
-                                <input type="checkbox" id="location-01" checked class="location__checkbox">
+                                <input type="checkbox" data-location-param id="location-01" checked class="location__checkbox">
                                 <label class="location__btn" for="location-01">&lt; 10</label>
 
-                                <input type="checkbox" id="location-02" checked class="location__checkbox">
+                                <input type="checkbox" data-location-param id="location-02" checked class="location__checkbox">
                                 <label class="location__btn" for="location-02">10-20</label>
 
-                                <input type="checkbox" id="location-03" class="location__checkbox">
+                                <input type="checkbox" data-location-param id="location-03" class="location__checkbox">
                                 <label class="location__btn" for="location-03">20-30</label>
 
-                                <input type="checkbox" id="location-04" class="location__checkbox">
+                                <input type="checkbox" data-location-param id="location-04" class="location__checkbox">
                                 <label class="location__btn" for="location-04">30+</label>
                             </div>
                             <div class="location__row">
@@ -365,26 +365,27 @@
                             <span class="checkbox__title">Малоэтажный</span>
                         </label>
 
-                        <div class="widget__hidden">
-                            <label class="checkbox">
+
+                            <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="value-06">
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт 1</span>
                             </label>
 
-                            <label class="checkbox">
+                            <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="value-07">
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт 2</span>
                             </label>
 
-                            <label class="checkbox">
+                            <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="value-08">
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт 3</span>
                             </label>
-                        </div>
-                        <button class="widget__show-hidden">Показать ещё</button>
+
+
+                        <button data-options="hidden" class="widget__show-hidden">Показать ещё</button>
                     </div>
                 </div>
                 <!-- // Widget -->
