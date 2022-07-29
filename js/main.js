@@ -64,10 +64,13 @@ topLocationCheckboxes.forEach(function (item) {
 })
 
 // Показать еще 3 доп опции с чекбоксами в фильтре
-const showMoreOptions = document.querySelector('.widget__show-hidden');
+const showMoreOptions = document.querySelector('.widget__btn-show-hidden');
 const hiddenCheckBoxes = document.querySelectorAll('.checkbox--hidden');
 
-showMoreOptions.onclick = function() {
+showMoreOptions.onclick = function(e) {
+    e.preventDafault();
+
+
     // Если блоки были скрыты - значит показываем
     if (showMoreOptions.dataset.options == "hidden") {
         hiddenCheckBoxes.forEach(function (item) {

@@ -446,7 +446,7 @@ a.card-link:hover {
   display: none;
 }
 
-.widget__show-hidden {
+.widget__btn-show-hidden {
   display: inline-block;
   background: transparent;
   padding: 0;
@@ -462,7 +462,11 @@ a.card-link:hover {
   transition: opacity 0.2s ease-in;
 }
 
-.widget__show-hidden:hover {
+.widget__btn-show-hidden:active, .widget__btn-show-hidden:focus {
+  outline: none;
+}
+
+.widget__btn-show-hidden:hover {
   color: #007fda;
   text-decoration: underline;
 }
