@@ -186,6 +186,10 @@ a.card-link:hover {
 	color: #777777;
 }
 
+.card__img-size {
+  width: 100%;
+}
+
 /* Button more */
 
 .btn-more {
