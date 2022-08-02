@@ -321,7 +321,7 @@ a.card-link:hover {
 }
 
 .location__checkbox:checked + .location__btn {
-	background-color: #ffcf26;
+	background-color: #b9def8;
 }
 
 .location__checkbox:checked + .location__btn:hover {
@@ -359,8 +359,12 @@ a.card-link:hover {
 	vertical-align: bottom;
 }
 
+.radio__fake:hover {
+	background-color: #7db0d4;
+}
+
 .radio__real:checked + .radio__fake {
-	background-color: #ffe074;
+	background-color: #b9def8;
 }
 
 .radio__real:checked + .radio__fake::before {
@@ -422,7 +426,11 @@ a.card-link:hover {
 }
 
 .checkbox__real:checked + .checkbox__fake {
-	background-color: #ffe074;
+	background-color: #b9def8;
+}
+
+.checkbox__fake:hover {
+	background-color: #7db0d4;
 }
 
 .checkbox__real:checked + .checkbox__fake::before {
@@ -517,7 +525,7 @@ a.card-link:hover {
 }
 
 .toggle__real:checked + .toggle__fake {
-	background: #ffe074;
+	background: #b9def8;
 }
 
 .toggle__real:checked + .toggle__fake::before {
@@ -579,13 +587,13 @@ a.card-link:hover {
 }
 
 .form-btn--submit {
-	background: #ffcf26;
+	background: #007fda;
 	border: none;
-	color: #000;
+	color: #fff;
 }
 
 .form-btn--submit:hover {
-	background: #ffe173;
+	background: #045e9f;
 }
 
 /* Button Toggle Sidebar */
