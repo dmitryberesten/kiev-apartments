@@ -84,7 +84,7 @@ showMoreOptions.onclick = function (e) {
 		hiddenCheckBoxes.forEach(function (item) {
 			item.style.display = 'block';
 		});
-		showMoreOptions.innerText = 'Скрыть дополнительные опции';
+		showMoreOptions.innerText = 'Приховати додаткові опції';
 		showMoreOptions.dataset.options = 'visible';
 	}
 	// Если блоки были видны - значит скрываем
