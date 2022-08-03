@@ -35,6 +35,31 @@ img {
 	justify-content: space-between;
 }
 
+/* HEADER start*/
+.header-block {
+	background: #259bf5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #259bf5, #f1f440);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #259bf5, #f1f440); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	padding: 5px;
+	font-size: 25px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* HEADER finish*/
+
+/* FOOTER start */
+.footer-block {
+	background: #259bf5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #259bf5, #f1f440);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #259bf5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	padding: 1px;
+	font-size: 15px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	box-shadow: 0px 0px 10px 5px 5px #11be75;
+}
+/* FOOTER finish */
+
 .main {
 	width: 870px;
 }
