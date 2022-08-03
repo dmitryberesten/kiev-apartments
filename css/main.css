@@ -44,6 +44,7 @@ img {
 	padding: 5px;
 	font-size: 25px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	box-shadow: 0px 0px 5px 5px #f1f440;
 }
 /* HEADER finish*/
 
@@ -56,7 +57,7 @@ img {
 	padding: 1px;
 	font-size: 15px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	box-shadow: 0px 0px 10px 5px 5px #11be75;
+	box-shadow: 0px 0px 4px 4px #259bf5;
 }
 /* FOOTER finish */
 
@@ -71,7 +72,6 @@ img {
 
 @media (max-width: 829px) {
 	.sidebar {
-		/* display: none; */
 		margin-left: 0 !important;
 		position: fixed;
 		top: 0;
