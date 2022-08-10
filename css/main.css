@@ -162,7 +162,7 @@ a.card-link:hover {
 }
 
 .card__badge--credit {
-	background: #11be75;
+	background: #1655f6;
 	color: #fff;
 }
 
@@ -696,4 +696,19 @@ a.card-link:hover {
 	transform: rotate(-45deg);
 	top: 0;
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.copyright {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0;
+	
+}
+
+.copyright a {
+	color: black;
+}
+
+.copyright a:hover {
+	color: white;
 }
