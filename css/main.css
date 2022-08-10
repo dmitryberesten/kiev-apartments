@@ -633,14 +633,17 @@ a.card-link:hover {
 	top: 8px;
 	width: 45px;
 	height: 45px;
-	background-color: rgb(71, 71, 71);
+	background-color: black;
 	justify-content: center;
 	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 @media (max-width: 829px) {
 	.toggle-sidebar {
 		display: flex;
+		cursor: pointer;
 	}
 }
 
@@ -653,6 +656,7 @@ a.card-link:hover {
 	padding: 0;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .menu-icon {
@@ -660,6 +664,7 @@ a.card-link:hover {
 	width: 30px;
 	height: 5px;
 	background-color: #fff;
+	cursor: pointer;
 }
 
 .menu-icon::before {
@@ -671,6 +676,7 @@ a.card-link:hover {
 	height: 5px;
 	background-color: #fff;
 	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	cursor: pointer;
 }
 
 .menu-icon::after {
@@ -682,6 +688,7 @@ a.card-link:hover {
 	height: 5px;
 	background-color: #fff;
 	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	cursor: pointer;
 }
 
 .menu-icon.menu-icon-active {
