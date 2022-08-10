@@ -132,6 +132,7 @@ a.card-link:hover {
 	position: relative;
 	width: 270px;
 	background-color: #fff;
+	border-radius: 15px 15px 15px 15px;
 }
 
 .card__badges {
@@ -213,6 +214,7 @@ a.card-link:hover {
 
 .card__img-size {
   width: 100%;
+  border-radius: 15px 15px 0px 0;
 }
 
 /* Button more */
