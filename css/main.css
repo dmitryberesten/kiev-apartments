@@ -196,11 +196,11 @@ a.card-link:hover {
 
 .card__metro::before {
 	content: '';
-	margin-right: 10px;
+	margin-right: 5px;
 	display: inline-block;
-	vertical-align: baseline;
-	width: 16px;
-	height: 11px;
+	vertical-align: text-bottom;
+    width: 25px;
+    height: 20px;
 	background-image: url('./../img/icons/metro.svg');
 	background-repeat: no-repeat;
 	background-size: initial;
