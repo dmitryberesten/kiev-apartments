@@ -71,7 +71,6 @@ topLocationCheckboxes.forEach(function (item) {
     })
 })
 
-
 /* Показать еще 3 доп опции с чекбоксами в фильтре */
 const showMoreOptions = document.querySelector('.widget__btn-show-hidden');
 const hiddenCheckBoxes = document.querySelectorAll('.checkbox--hidden');
@@ -95,5 +94,4 @@ showMoreOptions.onclick = function (e) {
 		showMoreOptions.innerText = 'Показать ещё';
 		showMoreOptions.dataset.options = 'hidden';
 	}
-
 }

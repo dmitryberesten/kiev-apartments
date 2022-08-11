@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -31,33 +39,41 @@ img {
 }
 
 .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 /* HEADER start*/
 .header-block {
-	background: #259bf5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #259bf5, #f1f440);  /* Chrome 10-25, Safari 5.1-6 */
+	background: #259bf5;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#259bf5), to(#f1f440));
+	background: -o-linear-gradient(top, #259bf5, #f1f440);
 	background: linear-gradient(to bottom, #259bf5, #f1f440); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
 	padding: 5px;
 	font-size: 25px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	box-shadow: 0px 0px 5px 5px #f1f440;
+	-webkit-box-shadow: 0px 0px 5px 5px #f1f440;
+	        box-shadow: 0px 0px 5px 5px #f1f440;
 }
 /* HEADER finish*/
 
 /* FOOTER start */
 .footer-block {
-	background: #259bf5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #259bf5, #f1f440);  /* Chrome 10-25, Safari 5.1-6 */
+	background: #259bf5;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#259bf5));
+	background: -o-linear-gradient(top, #259bf5);
 	background: linear-gradient(to bottom, #259bf5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
 	padding: 1px;
 	font-size: 15px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	box-shadow: 0px 0px 4px 4px #259bf5;
+	-webkit-box-shadow: 0px 0px 4px 4px #259bf5;
+	        box-shadow: 0px 0px 4px 4px #259bf5;
 }
 /* FOOTER finish */
 
@@ -79,14 +95,23 @@ img {
 		left: 0;
 		background-color: white;
 		padding: 15px;
-		box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 37%);
+		-webkit-box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 37%);
+		        box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 37%);
 		overflow-y: scroll;
-		transform: translateX(-150%);
+		-webkit-transform: translateX(-150%);
+		    -ms-transform: translateX(-150%);
+		        transform: translateX(-150%);
+		-webkit-transition: -webkit-transform 0.3s ease-in;
+		transition: -webkit-transform 0.3s ease-in;
+		-o-transition: transform 0.3s ease-in;
 		transition: transform 0.3s ease-in;
+		transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 	}
 
 	.sidebar--mobile-active {
-		transform: translateX(-0%);
+		-webkit-transform: translateX(-0%);
+		    -ms-transform: translateX(-0%);
+		        transform: translateX(-0%);
 	}
 }
 
@@ -95,15 +120,25 @@ img {
 }
 
 .cards-holder {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 @media (max-width: 599px) {
 	.cards-holder {
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 }
 
@@ -120,12 +155,16 @@ img {
 a.card-link {
 	display: inline-block;
 	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
 }
 
 a.card-link:hover {
 	opacity: 0.9;
-	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	        transform: translateY(-5px);
 }
 
 .card {
@@ -140,6 +179,8 @@ a.card-link:hover {
 	top: 10px;
 	left: 15px;
 	right: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -220,9 +261,15 @@ a.card-link:hover {
 /* Button more */
 
 .btn-more {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	width: 100%;
 	height: 80px;
@@ -237,6 +284,8 @@ a.card-link:hover {
 	color: #4290c9;
 
 	cursor: pointer;
+	-webkit-transition: background-color 0.2s ease-in;
+	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -245,9 +294,7 @@ a.card-link:hover {
 }
 
 .btn-more img {
-	/* display: inline-block; */
 	margin-right: 10px;
-	/* vertical-align: bottom; */
 }
 
 /* Sidebar */
@@ -283,10 +330,9 @@ a.card-link:hover {
 }
 
 .widget__title--active::after {
-	transform: rotate(180deg);
-}
-
-.widget__body {
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 .widget__body--hidden {
@@ -295,9 +341,9 @@ a.card-link:hover {
 
 /* Location buttons group */
 
-.location {
-}
 .location__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -315,7 +361,9 @@ a.card-link:hover {
 }
 
 .location__btn {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 
 	font-family: inherit;
 	height: 48px;
@@ -332,6 +380,8 @@ a.card-link:hover {
 	color: #3c3c3c;
 
 	cursor: pointer;
+	-webkit-transition: background-color 0.2s ease-in;
+	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
@@ -344,7 +394,9 @@ a.card-link:hover {
 	height: 1px;
 	position: absolute;
 	opacity: 0;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 
 .location__checkbox:checked + .location__btn {
@@ -371,7 +423,9 @@ a.card-link:hover {
 	height: 1px;
 	position: absolute;
 	opacity: 0;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 
 .radio__fake {
@@ -403,7 +457,9 @@ a.card-link:hover {
 	width: 6px;
 	height: 6px;
 	background: #3c3c3c;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .radio__real:checked ~ .radio__title {
@@ -437,7 +493,9 @@ a.card-link:hover {
 	height: 1px;
 	position: absolute;
 	opacity: 0;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 
 .checkbox__fake {
@@ -470,7 +528,9 @@ a.card-link:hover {
 	background-image: url('./../img/icons/check.svg');
 	background-size: initial;
 	background-position: center;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .checkbox__title {
@@ -503,6 +563,8 @@ a.card-link:hover {
 	line-height: 1.19;
 	color: #4290c9;
 	cursor: pointer;
+	-webkit-transition: color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in;
 	transition: color 0.2s ease-in;
 }
 
@@ -526,7 +588,9 @@ a.card-link:hover {
 	height: 1px;
 	position: absolute;
 	opacity: 0;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 .toggle__fake {
 	position: relative;
@@ -548,6 +612,8 @@ a.card-link:hover {
 	height: 16px;
 	background: #3c3c3c;
 	border-radius: 50%;
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
 }
 
@@ -557,7 +623,6 @@ a.card-link:hover {
 
 .toggle__real:checked + .toggle__fake::before {
 	left: 19px;
-	/* right: 2px; */
 }
 
 .toggle__title {
@@ -574,9 +639,15 @@ a.card-link:hover {
 /* Form buttons */
 
 .form-btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	width: 100%;
 	height: 50px;
@@ -595,14 +666,13 @@ a.card-link:hover {
 	color: #3c3c3c;
 
 	cursor: pointer;
+	-webkit-transition: background-color 0.2s ease-in;
+	-o-transition: background-color 0.2s ease-in;
 	transition: background-color 0.2s ease-in;
 }
 
 .form-btn img {
-	/* display: inline-block; */
 	margin-right: 6px;
-	/* vertical-align: middle; */
-	/* margin-top: -2px; */
 }
 
 .form-btn:hover {
@@ -634,14 +704,20 @@ a.card-link:hover {
 	width: 45px;
 	height: 45px;
 	background-color: black;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	border-radius: 10px;
 	cursor: pointer;
 }
 
 @media (max-width: 829px) {
 	.toggle-sidebar {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		cursor: pointer;
 	}
@@ -650,9 +726,15 @@ a.card-link:hover {
 .menu-icon-wrapper {
 	width: 30px;
 	height: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0;
 	border: none;
 	background-color: transparent;
@@ -675,7 +757,11 @@ a.card-link:hover {
 	width: 30px;
 	height: 5px;
 	background-color: #fff;
+	-webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+	transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+	-o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
 	cursor: pointer;
 }
 
@@ -687,7 +773,11 @@ a.card-link:hover {
 	width: 30px;
 	height: 5px;
 	background-color: #fff;
+	-webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+	transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+	-o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
 	cursor: pointer;
 }
 
@@ -696,22 +786,33 @@ a.card-link:hover {
 }
 
 .menu-icon.menu-icon-active::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	top: 0;
+	-webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+	transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+	-o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 
 .menu-icon.menu-icon-active::after {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 	top: 0;
+	-webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+	transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+	-o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 
 .copyright {
 	list-style-type: none;
 	text-align: center;
 	padding-left: 0;
-	
 }
 
 .copyright a {
