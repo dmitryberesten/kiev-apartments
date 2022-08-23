@@ -31,11 +31,11 @@ Adaptive menu:
 
 ![5k](https://user-images.githubusercontent.com/87872240/186138870-82b9d75b-4bd2-46aa-816a-12f9a1c358d4.png)
 
-Adaptive galerry:
+Adaptive gallery:
 
 ![6k](https://user-images.githubusercontent.com/87872240/186138946-0c257dd9-3f07-4d38-8b35-227a6d5b65f9.png)
 
-Adaptive galerry:
+Adaptive gallery:
 
 ![7k](https://user-images.githubusercontent.com/87872240/186139091-2bb73c79-bca6-4b8d-a21f-d8b5d5dd14e9.png)
 
