@@ -7,5 +7,8 @@ TECHNICAL CHARACTERISTICS:
 3. Flexbox
 4. Adaptive [Desktop | Mobile]
 5. jQuery
+5. Polyfill
+6. Autoprefixer
+7. Friendly Design
 
 ![1k](https://user-images.githubusercontent.com/87872240/186134820-62dacab1-c19c-4780-9bfa-81db12a8b81a.png)
